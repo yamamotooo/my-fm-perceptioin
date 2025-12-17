@@ -1,0 +1,52 @@
+# my-fm-perception README
+
+VS Code から FileMaker の DDR (FMSaveAsXML) ファイルを開き、スクリプトカタログに含まれるスクリプトをフォルダ＋テキストファイルに展開するツールです。  
+`my-fm-perception.exportXML` コマンド（コマンドパレットから「FileMaker: Export Scripts」などで検索）を提供します。
+
+## Features
+
+- アクティブな DDR XML (例: `連絡先.xml`) を解析し、`<ScriptCatalog>` に登録されているフォルダ/スクリプトを辿ります。
+- `Script.isFolder="True"` を検出するとフォルダを作成し、`ScriptReference.UUID` をたどってステップの DDRREF を突き合わせ、`DDR_INFO` から人間が読めるステップテキストを抽出して `.txt` として保存します。
+- 書き出し先は元の XML と同じディレクトリに `FMSaveAsXML/ScriptCatalog` を自動生成し、その配下にフォルダ階層＋テキストファイルを作成します。
+
+## Requirements
+
+特別な設定は不要です。VS Code のワークスペースに DDR XML ファイルが存在し、対象ファイルをエディターで開いている必要があります。
+
+## Extension Settings
+
+設定項目は現在ありません。
+
+## Known Issues
+
+- DDR_INFO に存在しない DDRREF を参照しているステップは、プレースホルダー文を出力します。
+- XML の構造は FileMaker バージョンに依存するため、未検証のバージョンでは解析に失敗する可能性があります。
+
+## Release Notes
+
+### 0.0.1
+
+- FileMaker Scripts をテキストに書き出すコマンドを追加。
+
+---
+
+## Following extension guidelines
+
+Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+
+* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+
+## Working with Markdown
+
+You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+
+* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
+* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
+* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+
+## For more information
+
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+
+**Enjoy!**
