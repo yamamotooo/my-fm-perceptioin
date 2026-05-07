@@ -28,11 +28,12 @@ Thumbs.db
 .env.*.local
 
 # ===== 【機密】データフォルダ =====
-# FileMakerの入力XML・書き出し先をすべて data/ にまとめる
-# data/.gitkeep のみ追跡し、中身は一切コミットしない
-data/*
-!data/.gitkeep
+data/
 *.fmp12
+
+# ===== ローカル開発設定 =====
+.vscode/
+CLAUDE.md
 
 # ===== 認証情報・シークレット =====
 *.pem
