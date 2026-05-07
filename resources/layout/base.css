@@ -1,0 +1,98 @@
+body {
+    font-family: "Hiragino Sans", "Yu Gothic", "Helvetica Neue", sans-serif;
+    background: #f5f5f7;
+    margin: 0;
+    padding: 2rem;
+    color: #111;
+}
+
+.fm-layout {
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #d0d0d7;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+
+.fm-layout-meta {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e5e5ea;
+    background: #fafafa;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.fm-parts {
+    position: relative;
+    padding: 1rem;
+}
+
+.fm-part {
+    position: relative;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem;
+    border: 1px dashed #c8c8d0;
+    border-radius: 6px;
+    background: rgba(30, 130, 255, 0.04);
+}
+
+.fm-part-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.fm-part-body {
+    position: relative;
+    min-height: 60px;
+    background: #fff;
+    border: 1px solid #e0e0ea;
+    border-radius: 4px;
+    padding: 0.75rem;
+    overflow: hidden;
+}
+
+.fm-object {
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.35rem 0.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.fm-object-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.fm-object-meta {
+    font-size: 0.7rem;
+    color: #555;
+    margin-top: 0.2rem;
+    line-height: 1.4;
+}
+
+.fm-object-children {
+    position: relative;
+    margin-top: 0.4rem;
+    padding-top: 0.4rem;
+    border-top: 1px dotted rgba(0, 0, 0, 0.2);
+}
+
+.fm-object-button {
+    background: #0366d6;
+    color: #fff;
+    border-color: #024c9e;
+}
+
+.fm-object-field {
+    background: #eef5ff;
+}
+
+.fm-empty {
+    font-size: 0.8rem;
+    color: #999;
+}
